@@ -1,0 +1,176 @@
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سهّالة | ملف العميل</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style/client.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="index.html" class="logo">
+          <img src="pic\logo.svg" width="47">
+          <span>سهّالة</span>
+        </a>
+        <div>
+          <a href="logout.html" class="btn btn-logout">
+            <i class="fas fa-sign-out-alt"></i> تسجيل خروج
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container profile-container">
+    <!-- Profile Card -->
+    <div class="profile-card">
+      <div class="profile-header">
+        <div class="profile-pic">
+          <i class="fas fa-user"></i>
+        </div>
+        <h3>عبدالله علي</h3>
+        <p>عميل مميز منذ </p>
+      </div>
+      
+      <div class="profile-info">
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="info-content">
+              <h4>الاسم الكامل</h4>
+              <p>عبدالله علي</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-content">
+              <h4>البريد الإلكتروني</h4>
+              <p>abdullah@example.com</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-content">
+              <h4>الموقع</h4>
+              <p>الرياض-حيالنرجس</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="info-content">
+              <h4>رقم الجوال</h4>
+              <p>055345234</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Orders Card -->
+    <div class="orders-card">
+      <h3 class="card-title">الطلبات السابقة</h3>
+      
+      <div class="order-list">
+        
+          
+            <div class="order-item">
+              <div class="order-header">
+                <div class="order-icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div>
+                  <div class="order-title">الكهرباء</div>
+                  <div class="order-id">#12</div>
+                </div>
+              </div>
+              <p>الكهرباء</p>
+              <span class="status-completed ">
+                مكتمل
+              </span>
+              
+              <div class="order-details">
+                <div class="order-date"></div>
+                <div class="order-price"> 200 ريال</div>
+              </div>
+            </div>
+              <div class="order-item">
+              <div class="order-header">
+                <div class="order-icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div>
+                  <div class="order-title">التنظيف</div>
+                  <div class="order-id">#22</div>
+                </div>
+              </div>
+              <p>تظيف غرفة</p>
+              <span class="status-pending ">
+                قيد التنفيذ
+              </span>
+              
+              <div class="order-details">
+                <div class="order-date"></div>
+                <div class="order-price"> 150 ريال</div>
+              </div>
+            </div>
+
+
+          <div class="order-item">
+              <div class="order-header">
+                <div class="order-icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div>
+                  <div class="order-title">حلاقة</div>
+                  <div class="order-id">#6</div>
+                </div>
+              </div>
+              <p>-</p>
+              <span class="status-canceld ">
+                ملغي 
+              </span>
+              
+              <div class="order-details">
+                <div class="order-date"></div>
+                <div class="order-price"> 100 ريال</div>
+              </div>
+            </div>
+          
+        
+          <!-- <p>لا توجد طلبات سابقة.</p> -->
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2023 سهّالة. جميع الحقوق محفوظة</p>
+      <p>صمم بكل ❤️ لتسهيل حياتك</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

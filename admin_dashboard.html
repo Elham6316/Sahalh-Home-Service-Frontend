@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم سهّـاله - الإدارة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/admin.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- Fixed Navigation Bar -->
+    <nav class="admin-navbar">
+        <div class="logo-container">
+            <div class="logo">
+            </div>
+            <div class="logo-text">
+                <h2>سهّـاله</h2>
+            </div>
+        </div>
+        
+        <div class="nav-tabs">
+            <div class="nav-tab active" data-tab="dashboard">
+                <i class="fas fa-tachometer-alt"></i> لوحة التحكم
+            </div>
+            <div class="nav-tab" data-tab="customers">
+                <i class="fas fa-users"></i> العملاء
+            </div>
+            <div class="nav-tab" data-tab="providers">
+                <i class="fas fa-user-tie"></i> مقدمي الخدمات
+            </div>
+            <div class="nav-tab" data-tab="requests">
+                <i class="fas fa-tasks"></i> الطلبات
+            </div>
+        </div>
+        
+        <div class="admin-actions">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="بحث...">
+            </div>
+            
+            <div class="logout">
+                <a href="index.html" ><button class="logout-btn">
+                    <i class="fa-solid fa-right-from-bracket fa-xl" style="color: #f5f5f5;"></i>
+                </button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="admin-container">
+        <!-- Dashboard Tab -->
+        <div class="content-tab active" id="dashboard-tab">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                    </div>
+                    <div class="stat-content">
+                        <h3>12,500.00 ر.س</h3>
+                        <p>إجمالي الأرباح</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="stat-content">
+                        <h3>85</h3>
+                        <p>إجمالي العملاء</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div class="stat-content">
+                        <h3>42</h3>
+                        <p>مقدمو الخدمات</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                    <div class="stat-content">
+                        <h3>15</h3>
+                        <p>الطلبات الجديدة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Customers Tab -->
+        <div class="content-tab" id="customers-tab">
+            <div class="section-title">
+                <h2>إدارة العملاء</h2>
+                <button class="btn btn-primary" id="add-customer-btn">
+                    <i class="fas fa-plus"></i> عميل جديد
+                </button>
+            </div>
+            
+            <div class="data-card">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>الاسم</th>
+                            <th>البريد الإلكتروني</th>
+                            <th>الهاتف</th>
+                            <th>العنوان</th>
+                            <th>تاريخ التسجيل</th>
+                            <th>الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1001</td>
+                            <td>علي محمد</td>
+                            <td>ali@example.com</td>
+                            <td>0551234567</td>
+                            <td>الرياض، حي العليا</td>
+                            <td>2025-01-15</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit" data-id="1001">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="action-btn delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1002</td>
+                            <td>سارة عبدالله</td>
+                            <td>sara@example.com</td>
+                            <td>0509876543</td>
+                            <td>جدة، حي الصفا</td>
+                            <td>2025-02-10</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit" data-id="1002">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="action-btn delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1003</td>
+                            <td>خالد أحمد</td>
+                            <td>khaled@example.com</td>
+                            <td>0541122334</td>
+                            <td>الدمام، حي الخليج</td>
+                            <td>2025-03-05</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit" data-id="1003">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="action-btn delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1004</td>
+                            <td>نورة حسن</td>
+                            <td>nora@example.com</td>
+                            <td>0534455667</td>
+                            <td>مكة، حي العزيزية</td>
+                            <td>2025-03-20</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit" data-id="1004">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="action-btn delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1005</td>
+                            <td>فهد سليمان</td>
+                            <td>fahad@example.com</td>
+                            <td>0599988776</td>
+                            <td>الرياض، حي النخيل</td>
+                            <td>2025-04-01</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit" data-id="1005">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="action-btn delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Service Providers Tab -->
+        <div class="content-tab" id="providers-tab">
+            <div class="section-title">
+                <h2>إدارة مقدمي الخدمات</h2>
+                <button class="btn btn-primary" id="add-provider-btn">
+                    <i class="fas fa-plus"></i> مقدم جديد
+                </button>
+            </div>
+            
+            <div class="data-card">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>الاسم</th>
+                            <th>الهاتف</th>
+                            <th>الخدمة</th>
+                            <th>السعر</th>
+                            <th>الحالة</th>
+                            <th>الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#2001</td>
+                            <td>أحمد حسن</td>
+                            <td>0509876543</td>
+                            <td>سباكة</td>
+                            <td>150 ر.س</td>
+                            <td>
+                                <span class="status active">متاح</span>
+                            </td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit" data-id="2001">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="action-btn delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#2002</td>
+                            <td>محمد علي</td>
+                            <td>0551122334</td>
+                            <td>كهرباء</td>
+                            <td>200 ر.س</td>
+                            <td>
+                                <span class="status active">متاح</span>
+                            </td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit" data-id="2002">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="action-btn delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#2003</td>
+                            <td>سامي عبدالرحمن</td>
+                            <td>0567788990</td>
+                            <td>نجارة</td>
+                            <td>250 ر.س</td>
+                            <td>
+                                <span class="status inactive">غير متاح</span>
+                            </td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit" data-id="2003">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="action-btn delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#2004</td>
+                            <td>يوسف خالد</td>
+                            <td>0590011223</td>
+                            <td>تكييف وتبريد</td>
+                            <td>300 ر.س</td>
+                            <td>
+                                <span class="status active">متاح</span>
+                            </td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit" data-id="2004">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="action-btn delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#2005</td>
+                            <td>عبدالله سعد</td>
+                            <td>0543344556</td>
+                            <td>دهانات</td>
+                            <td>180 ر.س</td>
+                            <td>
+                                <span class="status inactive">غير متاح</span>
+                            </td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit" data-id="2005">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="action-btn delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Requests Tab -->
+        <div class="content-tab" id="requests-tab">
+            <div class="section-title">
+                <h2>إدارة الطلبات</h2>
+                <button class="btn btn-primary">
+                    <i class="fas fa-filter"></i> تصفية النتائج
+                </button>
+            </div>
+            
+            <div class="data-card">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>الخدمة</th>
+                            <th>العميل</th>
+                            <th>مقدم الخدمة</th>
+                            <th>المبلغ</th>
+                            <th>الحالة</th>
+                            <th>الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#3001</td>
+                            <td>سباكة</td>
+                            <td>علي محمد</td>
+                            <td>أحمد حسن</td>
+                            <td>150 ر.س</td>
+                            <td>
+                                <span class="status completed">مكتمل</span>
+                            </td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit" data-id="3001">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="action-btn delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3002</td>
+                            <td>كهرباء</td>
+                            <td>سارة عبدالله</td>
+                            <td>محمد علي</td>
+                            <td>200 ر.س</td>
+                            <td>
+                                <span class="status pending">قيد التنفيذ</span>
+                            </td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit" data-id="3002">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="action-btn delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3003</td>
+                            <td>تكييف وتبريد</td>
+                            <td>خالد أحمد</td>
+                            <td>يوسف خالد</td>
+                            <td>300 ر.س</td>
+                            <td>
+                                <span class="status pending">قيد التنفيذ</span>
+                            </td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit" data-id="3003">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="action-btn delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3004</td>
+                            <td>نجارة</td>
+                            <td>نورة حسن</td>
+                            <td>سامي عبدالرحمن</td>
+                            <td>250 ر.س</td>
+                            <td>
+                                <span class="status cancelled">ملغي</span>
+                            </td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit" data-id="3004">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="action-btn delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3005</td>
+                            <td>دهانات</td>
+                            <td>فهد سليمان</td>
+                            <td>عبدالله سعد</td>
+                            <td>180 ر.س</td>
+                            <td>
+                                <span class="status completed">مكتمل</span>
+                            </td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn edit" data-id="3005">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="action-btn delete">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Modal -->
+    <div class="modal" id="customer-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">إدارة العميل</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="customer-form">
+                <div class="modal-body">
+                    <input type="hidden" name="cust_id" id="cust_id">
+                    <div class="form-group">
+                        <label class="form-label">الاسم الكامل</label>
+                        <input type="text" class="form-control" name="cust_name" id="cust_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">البريد الإلكتروني</label>
+                        <input type="email" class="form-control" name="cust_email" id="cust_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">كلمة المرور</label>
+                        <input type="password" class="form-control" name="cust_password" id="cust_password">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">رقم الهاتف</label>
+                        <input type="text" class="form-control" name="cust_phone" id="cust_phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">العنوان</label>
+                        <input type="text" class="form-control" name="address" id="address" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn close-modal">إلغاء</button>
+                    <button type="submit" class="btn btn-success" id="customer-submit-btn">حفظ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Provider Modal -->
+    <div class="modal" id="provider-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">إدارة مقدم الخدمة</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="provider-form">
+                <div class="modal-body">
+                    <input type="hidden" name="pro_id" id="pro_id">
+                    <div class="form-group">
+                        <label class="form-label">الاسم</label>
+                        <input type="text" class="form-control" name="pro_name" id="pro_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">الهاتف</label>
+                        <input type="text" class="form-control" name="pro_phone" id="pro_phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">الخدمة</label>
+                        <input type="text" class="form-control" name="service" id="service" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">السعر (ر.س)</label>
+                        <input type="number" class="form-control" name="price" id="price" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">الحالة</label>
+                        <select class="form-control" name="statu" id="statu" required>
+                            <option value="متاح">متاح</option>
+                            <option value="غير متاح">غير متاح</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn close-modal">إلغاء</button>
+                    <button type="submit" class="btn btn-success" id="provider-submit-btn">حفظ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Request Status Modal -->
+    <div class="modal" id="request-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">تغيير حالة الطلب</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="request-form">
+                <div class="modal-body">
+                    <input type="hidden" name="req_id" id="req_id">
+                    <div class="form-group">
+                        <label class="form-label">حالة الطلب</label>
+                        <select class="form-control" name="status" id="request-status" required>
+                            <option value="مكتمل">مكتمل</option>
+                            <option value="قيد التنفيذ">قيد التنفيذ</option>
+                            <option value="ملغي">ملغي</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn close-modal">إلغاء</button>
+                    <button type="submit" class="btn btn-success">تحديث الحالة</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Update active tab
+                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Show corresponding content
+                const tabId = this.dataset.tab;
+                document.querySelectorAll('.content-tab').forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                document.getElementById(`${tabId}-tab`).classList.add('active');
+            });
+        });
+        
+        // Modal functionality
+        const modals = document.querySelectorAll('.modal');
+        const closeButtons = document.querySelectorAll('.close-modal');
+        
+        // Open customer modal
+        document.getElementById('add-customer-btn').addEventListener('click', function() {
+            document.getElementById('customer-form').reset();
+            document.getElementById('cust_id').value = '';
+            document.getElementById('customer-submit-btn').textContent = 'إضافة';
+            document.getElementById('customer-modal').classList.add('active');
+        });
+        
+        // Open provider modal
+        document.getElementById('add-provider-btn').addEventListener('click', function() {
+            document.getElementById('provider-form').reset();
+            document.getElementById('pro_id').value = '';
+            document.getElementById('provider-submit-btn').textContent = 'إضافة';
+            document.getElementById('provider-modal').classList.add('active');
+        });
+        
+        // Edit customer
+        document.querySelectorAll('#customers-tab .action-btn.edit').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const custId = this.dataset.id;
+                
+                // In a real app, we would fetch data from server
+                // For demo, we'll use static values
+                document.getElementById('cust_id').value = custId;
+                document.getElementById('cust_name').value = 'علي محمد';
+                document.getElementById('cust_email').value = 'ali@example.com';
+                document.getElementById('cust_phone').value = '0551234567';
+                document.getElementById('address').value = 'الرياض، حي العليا';
+                
+                document.getElementById('customer-submit-btn').textContent = 'تحديث';
+                document.getElementById('customer-modal').classList.add('active');
+            });
+        });
+        
+        // Edit provider
+        document.querySelectorAll('#providers-tab .action-btn.edit').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const proId = this.dataset.id;
+                
+                // In a real app, we would fetch data from server
+                // For demo, we'll use static values
+                document.getElementById('pro_id').value = proId;
+                document.getElementById('pro_name').value = 'أحمد حسن';
+                document.getElementById('pro_phone').value = '0509876543';
+                document.getElementById('service').value = 'سباكة';
+                document.getElementById('price').value = '150';
+                document.getElementById('statu').value = 'متاح';
+                
+                document.getElementById('provider-submit-btn').textContent = 'تحديث';
+                document.getElementById('provider-modal').classList.add('active');
+            });
+        });
+        
+        // Edit request status
+        document.querySelectorAll('#requests-tab .action-btn.edit').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const reqId = this.dataset.id;
+                document.getElementById('req_id').value = reqId;
+                document.getElementById('request-modal').classList.add('active');
+            });
+        });
+        
+        // Form submissions
+        document.getElementById('customer-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('تم حفظ بيانات العميل بنجاح');
+            document.getElementById('customer-modal').classList.remove('active');
+        });
+        
+        document.getElementById('provider-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('تم حفظ بيانات مقدم الخدمة بنجاح');
+            document.getElementById('provider-modal').classList.remove('active');
+        });
+        
+        document.getElementById('request-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('تم تحديث حالة الطلب بنجاح');
+            document.getElementById('request-modal').classList.remove('active');
+        });
+        
+        // Close modals
+        closeButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                modals.forEach(modal => modal.classList.remove('active'));
+            });
+        });
+        
+        // Close modal when clicking outside
+        modals.forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                }
+            });
+        });
+        
+        // Delete buttons
+        document.querySelectorAll('.action-btn.delete').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (confirm('هل أنت متأكد من حذف هذا العنصر؟')) {
+                    const row = this.closest('tr');
+                    row.style.opacity = '0';
+                    setTimeout(() => {
+                        row.remove();
+                    }, 300);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

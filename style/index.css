@@ -1,0 +1,424 @@
+:root {
+      --dark-blue: #1A4170;
+      --green: #29DF64;
+      --light-gray: #f5f5f5;
+      --dark-gray: #6c757d;
+    }
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background: #fff;
+      color: var(--dark-blue);
+    }
+.header {
+      background: white;
+      box-shadow: var(--box-shadow);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .logo {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: var(--dark-blue);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn-primary {
+      background-color: var(--green);
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: var(--dark-blue);
+    }
+
+    /* Hero */
+    .hero {
+      background-color: #fcfcfa;
+      padding: 30px 0;
+    }
+    .hero img {
+      max-width: 400px;
+      height: auto;
+      margin-left: 70px;
+    }
+
+    /* Services */
+    .services {
+      padding: 70px 0;
+      background-color: #fff;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--dark-blue);
+      position: relative;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      width: 70px;
+      height: 4px;
+      background: var(--green);
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+    .service-card {
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      transition: all 0.3s;
+      border: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      margin-bottom: 25px;
+      height: 100%;
+      background: #fff;
+      gap: 10px;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+    }
+    .service-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: var(--light-gray);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 25px auto 15px;
+      font-size: 2.2rem;
+      color: var(--dark-blue);
+      transition: all 0.3s;
+    }
+    .service-card:hover .service-icon {
+      background-color: var(--green);
+      color: #fff;
+    }
+    .service-card h3 {
+      color: var(--dark-blue);
+      font-weight: 700;
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+    }
+    .service-card p {
+      color: var(--dark-gray);
+      padding: 0 15px 20px;
+      font-size: 0.95rem;
+    }
+
+    /* Request & About */
+    .request {
+      padding: 70px 0;
+      background-color: var(--dark-blue);
+      color: #fff;
+    }
+    .request .card {
+      background: #fff;
+      color: var(--dark-blue);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border: none;
+    }
+    .request .form-control,
+    .request .form-select {
+      direction: rtl;
+    }
+    h2.rqst {
+      color: var(--dark-blue);
+      font-weight: 700;
+    }
+    #price-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+  }
+  
+  #price-text span {
+    color: #1A4170;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+    .about-title {
+      position: relative;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    .about-title::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: var(--green);
+    bottom: -5px;
+    right: 0;
+    border-radius: 3px;
+    margin-bottom: -5px;
+    }
+    .about-text {
+      color: #fff;
+      margin-bottom: 25px;
+      margin-top: 20px;
+    }
+    .features-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+    .features-list li {
+      padding: 8px 0;
+      display: flex;
+      align-items: center;
+      font-size: 1.05rem;
+      color: #fff;
+    }
+    .features-list i {
+      color: var(--green);
+      margin-left: 12px;
+      font-size: 1.3rem;
+    }
+
+    /* Footer - Updated Design */
+    footer {
+      background-color: #f5f5f5;
+      color: white;
+      padding: 50px 0 10px;
+    }
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+
+    .footer-about {
+      color: #6c757d;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(15, 13, 13, 0.1);
+      color:#1A4170;
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      background: var(--green);
+      transform: translateY(-5px);
+    }
+    .footer-title {
+      position: relative;
+      font-weight: 700;
+      margin-bottom: 25px;
+      padding-bottom: 10px;
+      font-size: 1.3rem;
+      color:#1A4170;
+    }
+    .footer-title::after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: var(--green);
+      bottom: 0;
+      right: 0;
+      border-radius: 2px;
+    }
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-links li {
+      margin-bottom: 15px;
+    }
+    .footer-links a {
+      color: #6c757d;
+      text-decoration: none;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+        font-size: 15px;
+    }
+    .footer-links a:hover {
+      color: var(--green);
+      transform: translateX(-5px);
+    }
+    .footer-links a i {
+      margin-left: 10px;
+      color: var(--green);
+    }
+    .contact-info {
+      list-style: none;
+      padding: 0;
+    }
+    .contact-info li {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+      color: #6c757d;
+      font-size: 15px;
+    }
+    .contact-info i {
+      margin-left: 10px;
+      color: var(--green);
+      font-size: 1.2rem;
+      margin-top: 5px;
+
+    }
+    .copyright {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 25px;
+      text-align: center;
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+    .my-custom-confirm-button {
+      background-color: #1A4170; 
+}
+    .my-custom-confirm-button:hover{
+  background-color: #29DF64;
+}
+/* تنسيق العنوان داخل الـ Modal */
+.modal-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #1A4170; /* اللون الأساسي للموقع */
+    text-align: center;
+}
+
+/* تنسيق جسم الـ Modal (المحتوى داخل الـ Modal) */
+.modal-body {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6c757d; /* لون النص الأساسي */
+    text-align: center;
+}
+
+/* تنسيق الأزرار داخل الـ Modal */
+.modal-footer .btn-secondary {
+    background-color: #1A4170; /* اللون الأساسي للموقع */
+    border: 1px solid #1A4170;
+    color: white;
+    font-weight: 600;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #29DF64; /* اللون الأخضر عند المرور */
+    border-color: #29DF64;
+}
+
+/* تنسيق الـ Modal عند ظهورها (fade) */
+.modal.fade .modal-dialog {
+    transform: translate(0, -50%); /* تأثير تحريك الـ Modal */
+    transition: transform 0.3s ease-out; /* تأثير الانتقال */
+}
+
+/* Modal Header */
+.modal-header {
+    background-color: #1A4170; /* اللون الأساسي للموقع */
+    color: white;
+    border-bottom: 2px solid #29DF64; /* إضافة حدود بسيطة أسفل الـ Modal */
+}
+
+/* تنسيق العنوان داخل الـ Modal */
+.modal-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white; /* تحديد اللون الأبيض للعناوين */
+    text-align: center;
+}
+
+/* Modal Body */
+.modal-body {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6c757d; /* لون النص الأساسي */
+    padding: 15px;
+    text-align: center;
+}
+
+/* Modal Footer */
+.modal-footer {
+    background-color: #f5f5f5; /* خلفية فاتحة للـ Footer */
+    border-top: 1px solid #ddd; /* حدود خفيفة */
+    justify-content: center;
+}
+
+/* تعديل زر الإغلاق */
+.modal-header .btn-close {
+    color: white;
+}
+
+.modal-header .btn-close:hover {
+    color: #29DF64; /* اللون الأخضر عند التمرير */
+}
+
+/* تنسيق الأزرار داخل الـ Modal */
+.modal-footer .btn-secondary {
+    background-color: #1A4170; /* اللون الأساسي للموقع */
+    border: 1px solid #1A4170;
+    color: white;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #29DF64; /* اللون الأخضر عند التمرير */
+    border-color: #29DF64;
+}
+
+/* تنسيق الرسائل داخل الـ Modal (نجاح أو فشل) */
+.alert-success {
+    background-color: #29DF64;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* تنسيق الـ Modal عند إضافة الـ Modal-dialog */
+.modal-dialog {
+    max-width: 600px;
+    margin: 50px auto; /* تحديد المسافة الفاصلة للـ Modal */
+}
+
+/* تنسيق الخلفية المعتمة حول الـ Modal */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* خلفية مظلمة خفيفة */
+}
+
+/* تنسيق الـ Modal لتناسب الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .modal-dialog {
+        width: 90%;
+    }
+}
