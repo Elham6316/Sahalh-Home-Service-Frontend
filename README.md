@@ -1,6 +1,6 @@
-# Sahalh Project ⭐
+# Sahalh Project 🏡
 
-## Project Description 🏡
+## Project Description ⭐
 
 The "Sahalh" project is a web application that provides home services to customers. It allows users to create accounts, book services, and manage their appointments. The project is built using HTML, CSS, JavaScript, and SQL for database management.
 
