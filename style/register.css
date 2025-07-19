@@ -226,3 +226,32 @@
         font-size: 2.2rem;
       }
     }
+@media (max-width: 768px) {
+  .auth-container {
+    padding: 30px;
+  }
+
+  .form-control {
+    font-size: 1rem;
+    padding: 14px 18px;
+  }
+
+  .btn-primary {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .auth-container {
+    max-width: 90%;
+  }
+
+  .logo h1 {
+    font-size: 2rem;
+  }
+
+  .form-footer {
+    font-size: 1rem;
+  }
+}
