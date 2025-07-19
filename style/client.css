@@ -295,3 +295,63 @@
         grid-template-columns: 1fr;
       }
     }
+    /* الهواتف الصغيرة جدًا */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .btn-logout {
+    padding: 6px 15px;
+    font-size: 0.9rem;
+  }
+
+  .profile-pic {
+    width: 90px;
+    height: 90px;
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .order-title {
+    font-size: 1rem;
+  }
+
+  .order-price {
+    font-size: 1rem;
+  }
+
+  .order-details {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* أجهزة التابلت - من 769 إلى 1024 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .profile-container {
+    max-width: 90%;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .order-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* شاشات الديسكتوب الصغيرة - من 1025 إلى 1200 */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .order-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
