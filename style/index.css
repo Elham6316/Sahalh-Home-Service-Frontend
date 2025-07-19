@@ -422,3 +422,69 @@
         width: 90%;
     }
 }
+/* ------------------- Responsive Styles ------------------- */
+
+/* الهواتف (أصغر من 600px) */
+@media (max-width: 600px) {
+  .hero img {
+    margin-left: 0;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .service-card p {
+    font-size: 0.85rem;
+  }
+
+  .features-list li {
+    font-size: 0.95rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  #price-text span {
+    font-size: 1rem;
+  }
+}
+
+/* التابلت (من 601px إلى 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .hero img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+
+  .features-list li {
+    font-size: 1rem;
+  }
+}
+
+/* الشاشات الكبيرة (أكثر من 1024px) */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
