@@ -522,3 +522,40 @@
                 gap: 10px;
             }
         }
+        @media (max-width: 768px) {
+  .stat-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .stat-card {
+    padding: 15px;
+  }
+
+  .section-title h2 {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 0.85rem;
+  }
+
+  .data-table thead {
+    display: none;
+  }
+
+  .data-table tbody td {
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding: 10px 5px;
+  }
+
+  .data-table tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+}
