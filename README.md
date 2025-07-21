@@ -47,7 +47,7 @@ This is the frontend (static) version of the *Sahalah* web application. It showc
 
 ## 📦 Full System Versions
 
-- 🔹 [Frontend (Static Version)](https://elham6316.github.io/Sahalh-Home-Services/)
+- 🔹 [Frontend (Static Version)](https://elham6316.github.io/Sahalh-Home-Service-Frontend/)
 - 🔸 [Backend (PHP + MySQL Version)](http://sahalh.ct.ws)
 
 ---
