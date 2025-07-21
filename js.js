@@ -39,4 +39,17 @@
         toggleIcon.classList.add('fa-eye');
       }
     }
-    
+
+function clientlogin(event) {
+  event.preventDefault(); // تمنع الفورم من إعادة تحميل الصفحة
+
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("login-password").value;
+
+  if (email === "example@example.com" && password === "123456") {
+    window.location.href = "client.html";
+  } else {
+    alert("البريد الإلكتروني أو كلمة المرور غير صحيحة.");
+  }
+}
+
