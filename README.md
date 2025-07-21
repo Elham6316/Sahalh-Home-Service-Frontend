@@ -28,13 +28,15 @@ This is the frontend (static) version of the *Sahalah* web application. It showc
 
 ---
 
-## 🔐 Admin Login (Demo Only)
+## 🔐 Login (Demo Only)
 
 > *Note: This version is static and does not include real authentication.*
-
-- Username: admin  
-- Password: admin123  
-
+### Admin
+- Username: `admin`  
+- Password: `admin123`  
+### Client
+- Email:`example@example.com`
+- Password:`123456`
 ---
 
 ## 🧪 How to Use
