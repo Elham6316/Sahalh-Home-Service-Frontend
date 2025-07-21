@@ -6,7 +6,7 @@ This is the frontend (static) version of the *Sahalah* web application. It showc
 
 ## 🌐 Live Demo
 
-🔗 [View Live Demo (Frontend - GitHub Pages)](https://elham6316.github.io/Sahalh-Home-Services/)
+🔗 [View Live Demo (Frontend - GitHub Pages)](https://elham6316.github.io/Sahalh-Home-Service-Frontend/)
 
 ---
 
