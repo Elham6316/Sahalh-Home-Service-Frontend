@@ -1,35 +1,62 @@
-# Sahalh Project 🏡
+# 🏡 Sahalah - Home Maintenance Services System (Frontend Version)
 
-## Project Description ⭐
+This is the frontend (static) version of the *Sahalah* web application. It showcases the main interface for users to explore and request home maintenance services such as cleaning, repairs, and general maintenance.
 
-The "Sahalh" project is a web application that provides home services to customers. It allows users to create accounts, book services, and manage their appointments. The project is built using HTML, CSS, JavaScript, and SQL for database management.
+---
 
-## Demo 🎬
+## 🌐 Live Demo
 
-You can try the project live here: [Sahalh Home Services Demo](https://elham6316.github.io/Sahalh-Home-Services/)
+🔗 [View Live Demo (Frontend - GitHub Pages)](https://elham6316.github.io/Sahalh-Home-Services/)
 
+---
 
-## Admin Login Details 🔐
+## 💻 Technologies Used
 
-To log into the admin panel, use the following credentials:
+- HTML5  
+- CSS3  
+- JavaScript  
+- Bootstrap 5 
 
-- **Username**: `admin`
-- **Password**: `admin123`
+---
 
-## Running the Project ⚙️
+## 📂 Key Features
 
+- 📄 Static pages for service information
+- 🧾 Sample service request form (non-functional)
+- 🎨 Clean and responsive layout
+- 🔐 Admin login UI (for demo only)
 
-### 1. Database Setup 📊
-- Import the `sahalh.sql` file into your MySQL database.
-### 2. Project Files 📁
-- Place the HTML, CSS, JavaScript, and image files on your web server.
+---
 
-### 3. Access the Admin Panel 🛠️
-- Open the `admin_login.html` file in a browser and use the admin credentials to access the admin dashboard.
+## 🔐 Admin Login (Demo Only)
 
+> *Note: This version is static and does not include real authentication.*
 
-## Home Services 🏠
+- Username: admin  
+- Password: admin123  
 
-Sahalh provides a range of home services, including cleaning , repairs , and maintenance . Customers can easily book a service and track their appointments through the platform.
+---
+
+## 🧪 How to Use
+
+1. Clone or download the repository.
+2. Open index.html in your browser.
+3. Explore the site layout and UI components.
+
+---
+
+## 📦 Full System Versions
+
+- 🔹 [Frontend (Static Version)](https://elham6316.github.io/Sahalh-Home-Services/)
+- 🔸 [Backend (PHP + MySQL Version)](http://sahalh.ct.ws)
+
+---
+
+## 📬 Contact
+
+#### Elham6316@gmail.com
+---
+
+> © 2025 Sahalah. All rights reserved.
 
 
