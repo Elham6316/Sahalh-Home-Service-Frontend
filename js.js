@@ -23,7 +23,6 @@
     document.getElementById("price-text").innerText = `السعر: ${price} ريال`;
 }
 
-
     // Toggle password visibility
     function togglePassword(inputId) {
       const passwordInput = document.getElementById(inputId);
@@ -52,4 +51,5 @@ function clientlogin(event) {
     alert("البريد الإلكتروني أو كلمة المرور غير صحيحة.");
   }
 }
+
 
